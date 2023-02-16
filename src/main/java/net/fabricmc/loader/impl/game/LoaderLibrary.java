@@ -30,6 +30,7 @@ import org.spongepowered.asm.launch.MixinBootstrap;
 
 import net.fabricmc.accesswidener.AccessWidener;
 import net.fabricmc.api.EnvType;
+import net.fabricmc.loader.api.Version;
 import net.fabricmc.loader.impl.util.UrlConversionException;
 import net.fabricmc.loader.impl.util.UrlUtil;
 import net.fabricmc.mapping.tree.TinyMappingFactory;
@@ -37,6 +38,7 @@ import net.fabricmc.tinyremapper.TinyRemapper;
 
 enum LoaderLibrary {
 	FABRIC_LOADER(UrlUtil.LOADER_CODE_SOURCE),
+	FABRIC_SEMVER(Version.class),
 	TINY_MAPPINGS_PARSER(TinyMappingFactory.class),
 	SPONGE_MIXIN(MixinBootstrap.class),
 	TINY_REMAPPER(TinyRemapper.class),

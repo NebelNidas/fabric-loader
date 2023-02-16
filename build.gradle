@@ -78,6 +78,7 @@ dependencies {
 	api 'net.fabricmc:tiny-remapper:0.8.2'
 	api 'net.fabricmc:access-widener:2.1.0'
 
+	include api('net.fabricmc:fabric-semver:0.1.0:fat')
 	include 'org.ow2.sat4j:org.ow2.sat4j.core:2.3.6'
 	include 'org.ow2.sat4j:org.ow2.sat4j.pb:2.3.6'
 
